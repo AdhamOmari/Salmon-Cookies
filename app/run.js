@@ -79,8 +79,8 @@ let total = function () {
 
         }
         let th5 = document.createElement('td');
-           tr1.appendChild(th5);
-           th5.textContent = finalTotal;
+        tr1.appendChild(th5);
+        th5.textContent = finalTotal;
 
     }
 
@@ -107,13 +107,14 @@ let header = function () {
 
 
 }
+
 let seattle = new salmon('seattle', 65, 23, 6.3);
 let tokyo = new salmon('tokyo', 3, 24, 1.2);
 let dubai = new salmon('Dubai', 11, 38, 3.7);
 let paris = new salmon('Paris', 20, 38, 2.3);
 let lima = new salmon('Lima', 2, 16, 4.6);
 header();
-
+//console.log(salmonStore)
 seattle.getRandom();
 seattle.salesCookies();
 seattle.render();
@@ -133,4 +134,34 @@ paris.render();
 lima.getRandom();
 lima.salesCookies();
 lima.render();
-total() ;
+total();
+
+//total();
+//total();
+
+
+let cookiesForm = document.getElementById('cookisForm');
+cookiesForm.addEventListener('submit',addNewLocation);
+function addNewLocation (event){
+   event.preventDefault();
+
+   let locationName = event.target.locationName.value;
+    
+    let maxCustmer = event.target.maxCustmer.value;
+
+    let minCustmer = event.target.minCustmer.value;
+
+    let avgCustmerCookies = event.target.avgCustmerCookies.value;
+
+    let newlocation = new salmon(locationName,maxCustmer,minCustmer,avgCustmerCookies);
+
+  newlocation.getRandom();
+newlocation.salesCookies();
+newlocation.render();
+ total();
+
+
+}
+
+
+
