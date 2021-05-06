@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,49 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
 
-    <script src="app/run.js" defer></script></script>
+    <script src="app/run.js" defer></script>
+    </script>
 
 </head>
+
 <body>
-    <div id ="container"> </div> 
+    <div id="container"> </div>
     <header></header>
     <main>
-        <div id ="container"> </div> 
- <form action="" id="cookisForm"></form>
- 
- <fieldset>
-     <legend></legend>
- </fieldset>
-<div>
+
+
+        <form action="" id="cookisForm">
+
+
+            <fieldset>
+                <!-- storeName, maxCustmer, minCustmer, avgCustmerCookies -->
+                <legend>adding new location </legend>
+                <label for="locationName">Enter New Location</label>
+                <input id="locationName" name="locationName" type="text" placeholder="locationName" />
+
+                <label for="maxCustmer"> MaxCustmer</label>
+                <input id="maxCustmer" name="maxCustmer" type="text" placeholder="locationName" />
+
+                <label for="minCustmer">MinCustmer</label>
+                <input id="minCustmer" name="minCustmer" type="text" placeholder="minCustmer" />
+
+                <label for="avgCustmerCookies">AvgCustmerCookies</label>
+                <input id="avgCustmerCookies" name="avgCustmerCookies" type="text" placeholder="avg for custmer" />
 
 
 
-</div>
+
+                <input type="submit" value="Add New location">
+
+
+
+            </fieldset>
+
+
+
+
+
+        </form>
 
 
 
@@ -35,4 +61,5 @@
 </body>
 
 </body>
+
 </html>
