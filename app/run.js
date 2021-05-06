@@ -107,13 +107,14 @@ let header = function () {
 
 
 }
+
 let seattle = new salmon('seattle', 65, 23, 6.3);
 let tokyo = new salmon('tokyo', 3, 24, 1.2);
 let dubai = new salmon('Dubai', 11, 38, 3.7);
 let paris = new salmon('Paris', 20, 38, 2.3);
 let lima = new salmon('Lima', 2, 16, 4.6);
 header();
-
+console.log(salmonStore)
 seattle.getRandom();
 seattle.salesCookies();
 seattle.render();
