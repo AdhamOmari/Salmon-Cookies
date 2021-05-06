@@ -135,3 +135,6 @@ lima.getRandom();
 lima.salesCookies();
 lima.render();
 total() ;
+
+
+let cookiesForm = document.getElementById('cookisForm')
