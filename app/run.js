@@ -134,10 +134,8 @@ paris.render();
 lima.getRandom();
 lima.salesCookies();
 lima.render();
-total();
 
-//total();
-//total();
+
 
 
 let cookiesForm = document.getElementById('cookisForm');
@@ -155,13 +153,17 @@ function addNewLocation (event){
 
     let newlocation = new salmon(locationName,maxCustmer,minCustmer,avgCustmerCookies);
 
-  newlocation.getRandom();
-newlocation.salesCookies();
-newlocation.render();
- total();
-
+    newlocation.getRandom();
+    newlocation.salesCookies();
+    newlocation.render();
 
 }
+
+total();
+  
+
+
+
 
 
 

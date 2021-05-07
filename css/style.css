@@ -1,0 +1,43 @@
+body{
+    color: lavender;
+    background-color: rgb(51, 51, 54);
+}
+div {
+    width: 50%;
+}
+main{
+    margin-bottom: 30px;
+    background-color: rgb(20, 19, 19);
+}
+#location{
+    float: left;
+}
+
+nav li a {
+    color: lightcoral;
+}
+nav{
+    bottom: 30px;
+}
+
+footer{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+
+}
+#contact{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+
