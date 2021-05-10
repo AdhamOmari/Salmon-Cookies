@@ -156,6 +156,7 @@ function addNewLocation (event){
     newlocation.getRandom();
     newlocation.salesCookies();
     newlocation.render();
+    total();
 
 }
 
